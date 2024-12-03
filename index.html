@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Timeline</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="#home">Title<span>Design</span></a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="moving-background"></div>
+      <div class="hero-content">
+        <h1 class="hero-title"></h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="timeline-section">
+    <div class="container">
+      <h2 class="section-title">Interactive Timeline of Design</h2>
+      <div class="timeline" id="timeline-container">
+        <!-- Timeline items will be dynamically generated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <button class="popup-close">&times;</button>
+      <div class="popup-body">
+        <div class="popup-image">
+          <img src="" alt="Timeline Image">
+        </div>
+        <div class="popup-info">
+          <h3 id="popup-title">Popup Title</h3>
+          <p id="popup-details">Detailed information about the selected timeline.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start Quiz Button -->
+  <button id="start-quiz-button" class="quiz-start-btn">퀴즈 풀기</button>
+
+  <!-- Quiz Container -->
+  <div id="quiz-container" class="quiz-container hidden">
+    <div class="quiz-header">
+      <div id="progress" class="quiz-progress">문제 1 / 10</div>
+    </div>
+    <div class="timer-bar">
+      <div class="timer-fill"></div>
+    </div>
+    <div id="quiz-question" class="quiz-question"></div>
+    <div id="quiz-options" class="quiz-options"></div>
+    <button id="next-button" class="quiz-next-btn hidden">다음</button>
+    <div id="quiz-results" class="quiz-results hidden"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2024 Interactive Timeline. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <!-- Other social links -->
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
